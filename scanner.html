@@ -48,6 +48,9 @@
 </body>
 <script>
     $(function(){
+        setTimeout(function(){
+            window.location.href='./detail.html';
+        },3000)
         if(screen.width === 375 && screen.height===812) {
             $('.layer').addClass('homeLayer');
         } else if(screen.width === 375 && screen.height === 667){
