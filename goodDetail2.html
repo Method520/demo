@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html id="detail">
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/detail.css"/>
+    <link rel="stylesheet" type="text/css" href="css/goodDetail2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/util.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="goods1">
+    <div>
+        <div class="commonHead">
+            <img src="./image/back_icon.png" class="back"/>
+            <div class="title">贝壳高脚盘</div>
+        </div>
+        <div class="goodDtail">
+            <div class="level01">
+                <img src="./image/ka3.png"/>
+                <p>¥500，000</p>
+            </div>
+            <div class="infoGood">
+                1760年，法国皇室下令让塞夫尔获得镀金装饰的独家制作权。虽然之后此项法令被其他工厂——如由法国王子资助，而后却被废弃的索镇制造局与尚蒂伊制造局等打破——镀金依然是象征高雅、奢华而又独特的塞夫尔的瓷器语言。镀金装饰使得原本沉谧精幽、萤洁剔透的塞夫尔瓷，散发出如珠宝玉石般的炫目光彩。
+            </div>
+        </div>
+    </div>
+    <div class="goodDtail">
+        <div class="level01">
+            <img src="./image/ka3Big.png"/>
+        </div>
+        <div class="infoGood" style="margin-top:12px;">
+            自1771年起，镀金就通过化学方法来制作，将24K的金块溶解于酸液（包含金石与硝酸盐的王水）中，之后用氰亚铁酸盐沉淀，并磨成粉状后送回工坊。制瓷者们为瓷器点缀金箔，编织金线，或用金色图案作背景或加盖印，再用840℃-1000℃间的大火炼烧。刚出窑炉时瓷器并无异样，直到在工坊被抛光打磨后才见其光泽。
+        </div>
+        <div class="level02">
+            <div>
+                <img src="./image/ka3Big3.png"/>
+                <ul class="menu">
+                    <li class="shop1">
+                    </li>
+                    <li class="leveyu1">
+                    </li>
+                    <li class="shou1">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="moreDetail">
+            <p>创作年份:1953年</p>
+            <p>2.5 x 26 cm</p>
+            <p>一套磁盘由一件主菜盘，一件汤盘及一件甜品盘组成，共十二套</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function(){
+        if(screen.width === 375 && screen.height===812) {
+            $('.moreDetail').addClass('moreStyle3');
+        } else if(screen.width === 375 && screen.height === 667){
+            $('.moreDetail').addClass('moreStyle');
+        }else if(screen.width === 414 && screen.height === 736){
+            $('.moreDetail').addClass('moreStyle2');
+        } else if(screen.width < 414) {
+            $('.moreDetail').addClass('moreStyle')
+        }
+        $('.menu .shop1').click(function(){
+            $(this).toggleClass('shop2');
+        })
+        $('.menu .leveyu1').click(function(){
+            $(this).toggleClass('leveyu2');
+        })
+        $('.menu .shou1').click(function(){
+            $(this).toggleClass('shou2');
+        })
+        $('.back').click(function(){
+            window.history.go(-1);
+        })
+    }
+</script>
+</html>
