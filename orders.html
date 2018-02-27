@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="telephone=no" name="format-detection" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+  <link rel="stylesheet" type="text/css" href="css/common/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="./css/mine.css">
+  <title>我的订单</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header">
+      <div class="header-back">
+        <i class="icon icon-back"></i>
+        个人中心
+      </div>
+      <div class="header-title">
+        我的购买记录
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="order-item">
+        <div class="order-item_title">
+          <span class="item-title_time">2018-02-27 14:31:34</span>
+          <span class="item-title_status">预定中</span>
+        </div>
+        <div class="order-item_content">
+          <div class="item-content_img">
+            <img src="./image/gD1.png" alt="">
+          </div>
+          <dl class="item-content_text">
+            <dd>和平餐具瓷盘</dd>
+            <dd>￥500,000</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="order-item">
+        <div class="order-item_title">
+          <span class="item-title_time">2018-02-27 14:31:34</span>
+          <span class="item-title_status disabled">已取消</span>
+        </div>
+        <div class="order-item_content">
+          <div class="item-content_img">
+            <img src="./image/gD1.png" alt="">
+          </div>
+          <dl class="item-content_text">
+            <dd>和平餐具瓷盘</dd>
+            <dd>￥500,000</dd>
+          </dl>
+        </div>
+        <div class="order-item_action">
+          <button type="button" class="button">删除</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    document.querySelector('.header-back').addEventListener('click', function() {
+      window.location.href = './home.html';
+    });
+  </script>
+</html>

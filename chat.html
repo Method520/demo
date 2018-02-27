@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="telephone=no" name="format-detection" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+  <link rel="stylesheet" type="text/css" href="css/common/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="./css/mine.css">
+  <title>专属客服</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header">
+      <div class="header-back">
+        <i class="icon icon-back"></i>
+      </div>
+      <div class="header-title">
+        专属客服
+      </div>
+    </div>
+    <div class="page-content no-pad chat">
+      <div class="chat-content">
+        <div class="chat-item">
+          <img src="./image/personCenter.png" alt="">
+          <div class="chat-item_text">请问有什么可能帮到您的？</div>
+        </div>
+        <div class="chat-item ask">
+          <div class="chat-item_text">请问如何预订？</div>
+          <img src="./image/personActive.png" alt="">
+        </div>
+      </div>
+      <div class="chat-input">
+        <div class="input-text">
+          <input type="text" name="" id="">
+        </div>
+        <div class="input-voice"></div>
+        <div class="input-emoji"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    document.querySelector('.header-back').addEventListener('click', function() {
+      window.history.back();
+    });
+  </script>
+</html>
