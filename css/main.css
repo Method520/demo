@@ -133,3 +133,40 @@ li.scanner.active{
 .homeLayer3{
     padding-bottom:0px;
 }
+#goodDetail1 .level02 .menu {
+    margin-left: -35px;
+}
+#goodDetail1 .moreStyle3 {
+    bottom: -2.5rem;
+}
+#goodDetail1 .moreStyle2 {
+    bottom: -3.5rem;
+}
+#goodDetail1 .moreStyle {
+    bottom: -5.5rem;
+}
+#goodDetail2 .moreStyle3 {
+    bottom: -15rem;
+}
+#goodDetail2 .moreStyle2 {
+    bottom: -15.5rem;
+}
+#goodDetail2 .moreStyle {
+    bottom: -18rem;
+}
+#goodDetail3 .level02{
+    position: absolute;
+    right: 1rem;
+}
+#goodDetail3 .levelmoreStyle1{
+    bottom: -1rem;
+}
+#goodDetail3 .levelmoreStyle2{
+     bottom: -3rem;
+ }
+#goodDetail3 .levelmoreStyle3{
+    bottom: -2rem;
+}
+#goodDetail3 .goodDtail{
+    margin-top:10px;
+}

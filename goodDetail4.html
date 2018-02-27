@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="goodDetail1">
+<html id="goodDetail3">
 <head lang="en">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -15,24 +15,31 @@
     <script src="js/util.js"></script>
     <title></title>
 </head>
-<body style="background:#e9e5e2;">
+<body style=" background:#F0F0F1">
 <div class="goods1">
     <div class="commonHead">
         <img src="./image/back_icon.png" class="back"/>
-        <div class="title">和平餐具瓷盘</div>
+        <div class="title">绿卡干红葡萄酒</div>
     </div>
     <div class="goodDtail">
         <div class="level01">
-            <img src="./image/ka2.png"/>
-            <p>¥500，000</p>
+            <img src="./image/ka5.png"/>
         </div>
         <div class="infoGood">
-           此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。
+            <p>产 区： 格拉夫产区</p>
+            <p>年 份： 2011 年、2012 年、2015 年</p>
+            <p>适饮温度： 18-20℃</p>
+            <p>适合搭配食物：牛排、烤鸭等</p>
         </div>
     </div>
-    <div class="level02">
-        <div>
-            <img src="./image/ka2Big.png"/>
+    <div class="goodDtail">
+        <div class="level01">
+            <img src="./image/k5Big.png"/>
+        </div>
+        <div class="infoGood" style="margin-top:12px;">
+            酒品描述：偏重度酒体结构优雅、细腻，同时平衡感十足。樱桃红酒裙闪亮而厚重。此款酒香气复杂而层次分明，混合红色浆果、甘草等香气，回味绵长。
+        </div>
+        <div class="level02">
             <ul class="menu">
                 <li class="shop1">
                 </li>
@@ -43,23 +50,18 @@
             </ul>
         </div>
     </div>
-    <div class="moreDetail">
-        <p>创作年份:1953年</p>
-        <p>2.5 x 26 cm</p>
-        <p>一套磁盘由一件主菜盘，一件汤盘及一件甜品盘组成，共十二套</p>
-    </div>
 </div>
 </body>
 <script>
     window.onload = function(){
         if(screen.width === 375 && screen.height===812) {
-            $('.moreDetail').addClass('moreStyle3');
+            $('.level02').addClass('levelmoreStyle1');
         } else if(screen.width === 375 && screen.height === 667){
-            $('.moreDetail').addClass('moreStyle');
+            $('.level02').addClass('levelmoreStyle2');
         }else if(screen.width === 414 && screen.height === 736){
-            $('.moreDetail').addClass('moreStyle2');
+            $('.level02').addClass('levelmoreStyle3');
         } else if(screen.width < 414) {
-            $('.moreDetail').addClass('moreStyle')
+            $('.level02').addClass('levelmoreStyle2')
         }
         $('.menu .shop1').click(function(){
             $(this).toggleClass('shop2');
