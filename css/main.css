@@ -25,22 +25,22 @@
 }
 
 .footer ul li.classical{
-    background:url('../image/classical.png') no-repeat;
+    background:url('../image/classical.png') no-repeat center;
 }
 .footer ul li.classical.active{
-    background:url('../image/classical2.png') no-repeat;
+    background:url('../image/classical2.png') no-repeat center;
 }
 li.personCenter{
-    background:url('../image/personCenter.png') no-repeat;
+    background:url('../image/personCenter.png') no-repeat center;
 }
 li.personCenter.active{
-    background:url('../image/personActive.png') no-repeat;
+    background:url('../image/personActive.png') no-repeat center;
 }
 li.scanner{
-    background:url('../image/scanner1.png') no-repeat;
+    background:url('../image/scanner1.png') no-repeat center;
 }
 li.scanner.active{
-    background:url('../image/scannActive.png') no-repeat;
+    background:url('../image/scannActive.png') no-repeat center;
 }
 
 
@@ -111,7 +111,6 @@ li.scanner.active{
     z-index:100;
 }
 .layer ul{
-    margin-left:-40px;
     margin-top:1.5rem;
 }
 .layer ul li{
@@ -135,23 +134,19 @@ li.scanner.active{
 }
 .layer ul li a:link {color: #FFF!important;}
 .homeLayer{
-    margin-top:-45px;
     padding-bottom:50px;
 }
 
 .homeLayer ul{
-    margin-left:-40px;
     margin-top:2.8rem!important;
 }
 .homeLayer2{
     padding-bottom:0px;
 }
 .homeLayer2 ul{
-    margin-left:-40px;
     margin-top:2.5rem!important;
 }
 .homeLayer3 ul{
-    margin-left:-40px;
     margin-top: 1.5rem;
 }
 .homeLayer3{
