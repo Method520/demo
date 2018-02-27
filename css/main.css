@@ -77,6 +77,30 @@ li.scanner.active{
     line-height: 30px;
     text-align:right;
 }
+ .layer2{
+     position: fixed;
+     background: rgba(0,0,0,.7);
+     width: 300px;
+     height: 100px;
+     display: none;
+     top: 50%;
+     margin-top: -50px;
+     left: 50%;
+     margin-left: -150px;
+     z-index: 100;
+     border-radius: 13px;
+ }
+ .layer2 p{
+     color:#fff;position: absolute;top: 40%;left: 40%;
+ }
+
+.layer2 div {
+    position: absolute;
+    right: 16px;
+    color: #fff;
+    top: 7px;
+}
+
 .layer{
     position:fixed;
     background:rgba(0,0,0,.7);
@@ -112,12 +136,12 @@ li.scanner.active{
 .layer ul li a:link {color: #FFF!important;}
 .homeLayer{
     margin-top:-45px;
-    padding-bottom:44px;
+    padding-bottom:50px;
 }
 
 .homeLayer ul{
     margin-left:-40px;
-    margin-top:3.8rem!important;
+    margin-top:2.8rem!important;
 }
 .homeLayer2{
     padding-bottom:0px;
@@ -132,4 +156,60 @@ li.scanner.active{
 }
 .homeLayer3{
     padding-bottom:0px;
+}
+#goodDetail1 .level02 .menu {
+    margin-left: -35px;
+}
+#goodDetail1 .moreStyle3 {
+    bottom: -2.5rem;
+}
+#goodDetail1 .moreStyle2 {
+    bottom: -3.5rem;
+}
+#goodDetail1 .moreStyle {
+    bottom: -5.5rem;
+}
+#goodDetail2 .moreStyle3 {
+    bottom: -15rem;
+}
+#goodDetail2 .moreStyle2 {
+    bottom: -15.5rem;
+}
+#goodDetail2 .moreStyle {
+    bottom: -18rem;
+}
+#goodDetail3 .level02{
+    position: absolute;
+    right: 1rem;
+}
+#goodDetail3 .levelmoreStyle1{
+    bottom: -1rem;
+}
+#goodDetail3 .levelmoreStyle2{
+     bottom: -3rem;
+ }
+#goodDetail3 .levelmoreStyle3{
+    bottom: -2rem;
+}
+#goodDetail3 .goodDtail{
+    margin-top:10px;
+}
+#goodDetail5 .level02{
+    position: absolute;
+    right: 1rem;
+}
+#goodDetail5 .levelmoreStyle1 {
+    bottom: -25rem;
+}
+#goodDetail5 .levelmoreStyle3 {
+     bottom: -23rem;
+ }
+#goodDetail5 .levelmoreStyle2 {
+    bottom: -28rem;
+}
+#goodDetail2 .goodDtail , #goodDetail3 .goodDtail, #goodDetail5 .goodDtail{
+    padding:0;
+}
+#goodDetail2 .infoGood , #goodDetail3 .infoGood, #goodDetail5 .infoGood{
+    padding:0 20px;
 }

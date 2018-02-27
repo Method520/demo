@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="detail">
+<html id="goodDetail1">
 <head lang="en">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -15,41 +15,39 @@
     <script src="js/util.js"></script>
     <title></title>
 </head>
-<body>
-<div class="commonHead">
-    <img src="./image/back_icon.png" class="back"/>
-    <div class="title">和平餐具瓷盘</div>
-</div>
-<div class="goodDtail">
-    <div class="level01">
-        <img src="./image/goodDetail.png"/>
-        <p>¥500，000</p>
+<body style="background:#e9e5e2;">
+<div class="goods1">
+    <div class="commonHead">
+        <img src="./image/back_icon.png" class="back"/>
+        <div class="title">和平餐具瓷盘</div>
     </div>
-    <div class="infoGood">
-       此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。
+    <div class="goodDtail">
+        <div class="level01">
+            <img src="./image/ka2.png"/>
+            <p>¥500，000</p>
+        </div>
+        <div class="infoGood">
+           此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。
+        </div>
     </div>
-</div>
-<div class="level02">
-    <div>
-        <img src="./image/leftGood.png"/>
-        <ul class="menu">
-            <li class="shop1">
-            </li>
-            <li class="leveyu1">
-            </li>
-            <li class="shou1">
-            </li>
-        </ul>
+    <div class="level02">
+        <div>
+            <img src="./image/ka2Big.png"/>
+            <ul class="menu">
+                <li class="shop1">
+                </li>
+                <li class="leveyu1">
+                </li>
+                <li class="shou1">
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="moreDetail">
-    <p>创作年份:1953年</p>
-    <p>2.5 x 26 cm</p>
-    <p>一套磁盘由一件主菜盘，一件汤盘及一件甜品盘组成，共十二套</p>
-</div>
-<div class="layer2">
-    <p>收藏成功~</p>
-    <div>X</div>
+    <div class="moreDetail">
+        <p>创作年份:1953年</p>
+        <p>2.5 x 26 cm</p>
+        <p>一套磁盘由一件主菜盘，一件汤盘及一件甜品盘组成，共十二套</p>
+    </div>
 </div>
 </body>
 <script>
@@ -71,15 +69,9 @@
         })
         $('.menu .shou1').click(function(){
             $(this).toggleClass('shou2');
-            if($(this).hasClass('shou2')) {
-              $('.layer2').css('display','block');
-            }
         })
         $('.back').click(function(){
             window.history.go(-1);
-        })
-        $('.layer2').click(function(){
-            $(this).css('display','none');
         })
     }
 </script>
