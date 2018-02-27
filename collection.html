@@ -22,11 +22,25 @@
 </div>
 <div class="collectionList">
     <ul>
-        <li>
+        <li id="good1">
             <img src="./image/gD1.png"/>
             <div class="collectionGood">
                 <p>和平餐具瓷盘</p>
                 <p>创作年份:1953年</p>
+            </div>
+        </li>
+        <li id="good2">
+            <img src="./image/3.png"/>
+            <div class="collectionGood">
+                <p>大明潮系列-金顶</p>
+                <p>创作年份:1953年</p>
+            </div>
+        </li>
+        <li id="good3">
+            <img src="./image/6.png"/>
+            <div class="collectionGood">
+                <p>贝壳高脚盘(瓷器)</p>
+                <p>创作年份:1753年</p>
             </div>
         </li>
         <li>
@@ -36,13 +50,7 @@
                 <p>魔幻宫殿系列</p>
             </div>
         </li>
-        <li>
-            <img src="./image/3.png"/>
-            <div class="collectionGood">
-                <p>大明潮系列-金顶</p>
-                <p>创作年份:1953年</p>
-            </div>
-        </li>
+
         <li>
             <img src="./image/4.png"/>
             <div class="collectionGood">
@@ -57,13 +65,7 @@
                 <p>LUNARIS MOSAIC</p>
             </div>
         </li>
-        <li>
-            <img src="./image/6.png"/>
-            <div class="collectionGood">
-                <p>贝壳高脚盘(瓷器)</p>
-                <p>创作年份:1753年</p>
-            </div>
-        </li>
+
     </ul>
 </div>
 </body>
@@ -75,8 +77,14 @@
         $('.collectionList ul li').click(function(e){
             $(this).addClass('active').siblings().removeClass('active');
         })
-        $('.collectionGood').click(function(){
+        $('.collectionList  ul li#good1').click(function(){
             window.location.href='./detail.html';
+        })
+        $('.collectionList  ul li#good2').click(function(){
+            window.location.href='./goodDetail1.html';
+        })
+        $('.collectionList  ul li#good3').click(function(){
+            window.location.href='./goodDetail2.html';
         })
     })
 

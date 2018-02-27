@@ -47,6 +47,10 @@
     <p>2.5 x 26 cm</p>
     <p>一套磁盘由一件主菜盘，一件汤盘及一件甜品盘组成，共十二套</p>
 </div>
+<div class="layer2">
+    <p>收藏成功~</p>
+    <div>X</div>
+</div>
 </body>
 <script>
     window.onload = function(){
@@ -67,9 +71,15 @@
         })
         $('.menu .shou1').click(function(){
             $(this).toggleClass('shou2');
+            if($(this).hasClass('shou2')) {
+              $('.layer2').css('display','block');
+            }
         })
         $('.back').click(function(){
             window.history.go(-1);
+        })
+        $('.layer2').click(function(){
+            $(this).css('display','none');
         })
     }
 </script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html id="goodDetail5">
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/detail.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/util.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="goods1">
+    <div class="commonHead">
+        <img src="./image/back_icon.png" class="back"/>
+        <div class="title">紫玉秋沙河谷</div>
+    </div>
+    <div class="goodDtail">
+        <div class="level01">
+            <img src="./image/ka6.png"/>
+            <p>¥500，000</p>
+        </div>
+        <div class="infoGood">
+            是香港恒 丰集团在长白山开发的高端别墅项目,该 项目利用当地独特的红浮石作为外立面材 料,坚持生态环保、建筑原地生长的理 念。目前,该项目已建成的有P、J两种 户型共12套,已投入市场。 紫玉秋沙河谷是从树木的缝隙中寻找灵 感,构建房屋格局,不破坏生态的一草一 木,建筑材料取自原地、用于原地。房屋 与景观相融,使房屋如同丛林中生长出一 般。在施工的过程中塔吊避开树木,设计 路线巧妙的进场施工。给树木、山石做上 标签,加以警戒线,保护原始地形地貌不 受破坏。
+        </div>
+    </div>
+    <div class="goodDtail">
+        <div class="level01">
+            <img src="./image/ka61.png"/>
+        </div>
+        <div class="infoGood" style="margin-top:12px;">
+            香港恒丰集团是一个多元化的 集团公司(港台背景),旗下 包含紫玉地产、在之禾度假酒 店、紫玉乡村俱乐部以及北京 集祥物业管理有限公司。 进驻中国大陆地区40余年,经 营产业涉及投资、地产开发、 工业、酒店、旅游度假等,同 时也致力于发展两岸三地的政 治、经济、文化交流。 经济实力雄厚、信誉优良,尤 其在生态文化旅游产业方面, 成为行业的典范。
+        </div>
+    </div>
+    <div class="goodDtail">
+        <div class="level01">
+            <img src="./image/ka62.png"/>
+        </div>
+        <div class="infoGood" style="margin-top:12px;">
+            香港恒丰集团是一个多元化的 集团公司(港台背景),旗下 包含紫玉地产、在之禾度假酒 店、紫玉乡村俱乐部以及北京 集祥物业管理有限公司。 进驻中国大陆地区40余年,经 营产业涉及投资、地产开发、 工业、酒店、旅游度假等,同 时也致力于发展两岸三地的政 治、经济、文化交流。 经济实力雄厚、信誉优良,尤 其在生态文化旅游产业方面, 成为行业的典范。
+        </div>
+    </div>
+    <div class="level02">
+        <ul class="menu">
+            <li class="shop1">
+            </li>
+            <li class="leveyu1">
+            </li>
+            <li class="shou1">
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function(){
+        if(screen.width === 375 && screen.height===812) {
+            $('.level02').addClass('levelmoreStyle1');
+        } else if(screen.width === 375 && screen.height === 667){
+            $('.level02').addClass('levelmoreStyle2');
+        }else if(screen.width === 414 && screen.height === 736){
+            $('.level02').addClass('levelmoreStyle3');
+        } else if(screen.width < 414) {
+            $('.level02').addClass('levelmoreStyle2')
+        }
+        $('.menu .shop1').click(function(){
+            $(this).toggleClass('shop2');
+        })
+        $('.menu .leveyu1').click(function(){
+            $(this).toggleClass('leveyu2');
+        })
+        $('.menu .shou1').click(function(){
+            $(this).toggleClass('shou2');
+        })
+        $('.back').click(function(){
+            window.history.go(-1);
+        })
+    }
+</script>
+</html>

@@ -62,3 +62,7 @@ body{
 .moreStyle3{
     bottom: -4.5rem;
 }
+.level01 img {
+    /* margin-left: 20px; */
+    width: 100%;
+}
