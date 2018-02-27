@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="telephone=no" name="format-detection" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+  <link rel="stylesheet" type="text/css" href="css/common/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="./css/mine.css">
+  <title>我的订单</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header">
+      <div class="header-back">
+        <i class="icon icon-back"></i>
+      </div>
+      <div class="header-title">
+        预订页
+      </div>
+    </div>
+    <div class="page-content has-pad">
+      <div class="pay-amount">
+        <span>预付金</span>
+        <b><small>￥</small>50,000</b>
+      </div>
+      <div class="pay-way">
+        <p class="pay-way_title">
+          <i class="icon-money"></i>
+          支付方式
+        </p>
+        <div class="pay-way_content">
+          <div class="pay-way_item">
+            <img src="./image/alipay.png" alt="支付宝">
+            <div class="radio">
+              <input type="radio" name="payway" id="alipay" checked>
+              <label for="alipay" class="radio-label"></label>
+            </div>
+          </div>
+          <div class="pay-way_item">
+            <img src="./image/wepay.png" alt="微信支付">
+            <div class="radio">
+              <input type="radio" name="payway" id="wepay">
+              <label for="wepay" class="radio-label"></label>
+            </div>
+          </div>
+          <div class="pay-way_item">
+            <img src="./image/other.png" alt="其他">
+            <div class="radio">
+              <input type="radio" name="payway" id="other">
+              <label for="other" class="radio-label"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pay-action">
+        <button type="button" class="button button-primary">去支付</button>
+        <button type="button" class="button button-plain">取消</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    document.querySelector('.header-back').addEventListener('click', function() {
+      window.history.back();
+    });
+  </script>
+</html>
