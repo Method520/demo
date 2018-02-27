@@ -1,0 +1,55 @@
+body{
+    background:#212121;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:30%;
+    left: 0;
+}
+.content .scan{
+    position:relative;
+    top:0;
+    left:50%;
+    margin-left:-102px;
+    width:204px;
+    height:204px;
+    background-image:url(../image/scanner.png);
+    background-size: cover;
+    background-position: center;
+}
+.content .scan img{
+    position:absolute;
+    top:200px;
+    z-index:10;
+    animation:myScan 1s infinite alternate;
+    -webkit-animation:myScan 1s infinite alternate;
+}
+@keyframes myScan{
+    from{top:5px;}
+    to{bottom:10px;}
+}
+
+-webkit-@keyframes myScan {
+            from {
+                top: 5px;
+            }
+            to {
+                bottom: 10px;
+            }
+        }
+
+div.warning{
+    margin: 0;
+    text-align: center;
+    color:#BE9C77;
+    position:relative;
+    top:70px;
+    font-size:16px;
+}
+.sao{
+    position: relative;
+    left: 50%;
+    margin-left: -123px;
+    bottom: 115px;
+}

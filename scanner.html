@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/scanner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/util.js"></script>
+    <title></title>
+</head>
+<body id="scanner">
+    <div class="content">
+        <div class="scan">
+            <img src="./image/Line.png"/>
+        </div>
+        <!--<div class="sao">-->
+            <!--<img src="image/line.png"/>-->
+        <!--</div>-->
+        <!--<div class="warning">扫描失败-请重新扫描</div>-->
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="classical"></li>
+            <li class="personCenter"></li>
+            <li class="scanner active"></li>
+        </ul>
+    </div>
+    <div class="layer">
+        <ul>
+            <li> 艺术鉴赏</li>
+            <li> 珠宝腕表</li>
+            <li> 水晶瓷器</li>
+            <li> 家具生活</li>
+            <li> 旅行发现</li>
+            <li> 体育赛事</li>
+            <li> 私人玩具</li>
+            <li> 美酒美食</li>
+            <li>  手机数码</li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(function(){
+        if(screen.width === 375 && screen.height===812) {
+            $('.layer').addClass('homeLayer');
+        } else if(screen.width === 375 && screen.height === 667){
+            $('.layer').addClass('homeLayer3');
+        }else if(screen.width === 414 && screen.height === 736){
+            $('.layer').addClass('homeLayer2');
+        }
+        $('.personCenter').click(function(){
+            window.location.href='./home.html';
+        })
+        $('.classical').click(function(){
+            $('.layer').css('display','block');
+            $('.footer ul li').siblings().removeClass('active');
+            $(this).addClass('active');
+        })
+        $('.layer ul li').click(function(e){
+            $(this).addClass('active').siblings().removeClass('active');
+            window.location.href='./detail.html';
+        })
+    })
+
+</script>
+</html>

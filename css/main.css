@@ -1,0 +1,135 @@
+.button{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border-radius: 5px;
+    border:2px solid #717171;
+    background: transparent;
+    color: rgba(255,255,255,.7);
+    text-align:center;
+    font-size:16px;
+}
+.footer{
+    position:absolute;
+    bottom:30px;
+    width:100%;
+}
+.footer ul{
+    width:100%;
+}
+.footer ul li{
+    width:50px;
+    height:50px;
+    width: 33.3%;
+    float: left;
+}
+
+.footer ul li.classical{
+    background:url('../image/classical.png') no-repeat;
+}
+.footer ul li.classical.active{
+    background:url('../image/classical2.png') no-repeat;
+}
+li.personCenter{
+    background:url('../image/personCenter.png') no-repeat;
+}
+li.personCenter.active{
+    background:url('../image/personActive.png') no-repeat;
+}
+li.scanner{
+    background:url('../image/scanner1.png') no-repeat;
+}
+li.scanner.active{
+    background:url('../image/scannActive.png') no-repeat;
+}
+
+
+.commonHead{
+    height:42px;
+    border-bottom:1px solid #e9e9e9;
+    color:#5A4942;
+    line-height:42px;
+    padding-left:20px;
+}
+.commonHead .perCen{
+    padding-left:12px;
+    font-family: MicrosoftYaHeiUI;
+    font-size: 17px;
+}
+.commonHead .title{
+    text-align:center;
+    font-family: PingFangSC-Semibold;
+    font-size: 17px;
+    color: #5A4942;
+    font-weight:600;
+    line-height: 22px;
+    margin-top:-34px;
+}
+ .moreDetail{
+    padding-right:20px;
+     padding-right: 20px;
+     position: absolute;
+}
+ .moreDetail  p{
+    font-family: NotoSansHans-DemiLight;
+    font-size: 16px;
+    color: #BC9972;
+    line-height: 30px;
+    text-align:right;
+}
+.layer{
+    position:fixed;
+    background:rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    display:none;
+    top:0;
+    z-index:100;
+}
+.layer ul{
+    margin-left:-40px;
+    margin-top:1.5rem;
+}
+.layer ul li{
+    position: relative;
+    width: 130px;
+    height: 40px;
+    left: 50%;
+    margin-left: -65px;
+    text-align:center;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 40px;
+    margin-bottom:10px;
+}
+.layer ul li.active{
+    text-align:center;
+    border:1px solid #bc9972;
+    border-radius: 20px;
+    color:#bc9972;
+    line-height:40px;
+}
+.layer ul li a:link {color: #FFF!important;}
+.homeLayer{
+    margin-top:-45px;
+    padding-bottom:44px;
+}
+
+.homeLayer ul{
+    margin-left:-40px;
+    margin-top:3.8rem!important;
+}
+.homeLayer2{
+    padding-bottom:0px;
+}
+.homeLayer2 ul{
+    margin-left:-40px;
+    margin-top:2.5rem!important;
+}
+.homeLayer3 ul{
+    margin-left:-40px;
+    margin-top: 1.5rem;
+}
+.homeLayer3{
+    padding-bottom:0px;
+}

@@ -1,0 +1,86 @@
+.head{
+    width:100%;
+    height: 4.5rem;
+    position: absolute;
+    background:url('../image/414.png') no-repeat;
+}
+.head img{
+    position:absolute;
+    top:80px;
+    left:50%;
+    margin-left:-58px;
+}
+.headBg1{
+    height: 5rem;
+    background:url('../image/375.png') no-repeat;
+}
+.headBg3{
+    background:url('../image/414.png') no-repeat;
+}
+.layer ul{
+    margin-left:-40px;
+    margin-top:1.5rem;
+}
+.head input{
+    width:100px;
+    height:36px;
+    line-height:36px;
+    background: #BC9972;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 60px;
+    position: relative;
+    top:3.2rem;
+    left: 50%;
+    font-size:14px;
+    margin-left: -50px;
+    color:#fff;
+}
+.content{
+    padding-top:5rem;
+}
+.content1{
+    padding-top:7rem;
+}
+.content table{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse:collapse;
+}
+.content table tr td{
+    border:1px solid #ccc;
+    width:50%;
+    text-align:center;
+    height:130px;
+}
+.content table tr td p{
+    color:#88818F;
+    font-size:12px;
+    margin-top:18px;
+}
+.content table tr:first-child td{
+    border-top:none;
+}
+.content table tr:last-child td{
+    border-bottom:none;
+}
+.content table tr:first-child td:first-child,.content table tr:last-child td:first-child{
+    border-left:none;
+}
+.content table tr:first-child td:last-child,.content table tr:last-child td:last-child{
+    border-right:none;
+}
+.home p.username{
+    position: relative;
+    top: 175px;
+    left: 50%;
+    color: #fff;
+}
+.footerNew{
+    bottom:12px;
+}
+.contentNew{
+    padding-top: 5.6rem;
+}
+.contentNew2{
+    padding-top: 5.6rem;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html id="login">
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/util.js"></script>
+    <title>登陆/注册</title>
+</head>
+<body>
+    <div class="head">
+        <img src="image/logo.png"/>
+    </div>
+    <div class="content">
+       <input type="text" placeholder="登录名" id="name"/><br/>
+       <input type="password" placeholder="密码" id="pass"/>
+      <div class="pwarning">用户名或密码错误</div>
+    </div>
+
+    <div class="base">
+        <input type="button" class="button" value="登录"/>
+        <p class="regist">注册</p>
+    </div>
+</body>
+<script>
+  $(function(){
+	  if(screen.width === 375 && screen.height===812) {
+	    $('body').addClass('bg');
+          $('.head').addClass('headNew1');
+	  } else if(screen.width === 375 && screen.height === 667){
+          $('body').addClass('bg3');
+          $('.head').addClass('headNew');
+      }else if(screen.width === 414 && screen.height === 736){
+          $('body').addClass('bg2');
+          $('.head').addClass('headNew2');
+      }
+      $('.base .button').click(function(){
+          var name = $('#name').val();
+          var pass = $('#pass').val();
+          if(name !== 'admin' || pass!=='admin'){
+             $('.content .pwarning').css('display','block');
+          }else if(name === 'admin' && pass === 'admin'){
+              $('.content .pwarning').css('display','none');
+              window.location.href="./index.html?name="+name;
+          }
+      })
+      $('#name').change(function(){
+          $('.content .pwarning').css('display','none');
+      })
+      $('#pass').change(function(){
+          $('.content .pwarning').css('display','none');
+      })
+      $('.regist').click(function(){
+      })
+
+  })
+</script>
+</html>

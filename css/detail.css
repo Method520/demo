@@ -1,0 +1,64 @@
+body{
+    background:#fff;
+}
+.goodDtail{
+    padding:0 20px;
+}
+.level01 img{
+    margin-left: 20px;
+}
+.level01 p{
+    float:left;
+    font-size: 24px;
+    color: #5A4942;
+    margin-left:10px;
+}
+.infoGood{
+    font-size: 16px;
+    color: #BC9972;
+    line-height: 30px;
+    margin-top: 43px;
+    text-indent:2em;
+}
+.level02 img{
+    float:left;
+    width:80%;
+}
+.level02 .menu{
+    float:left;
+    margin-left: -54px;
+    margin-top: 124px;
+}
+.level02 .menu li{
+    width:50px;
+    height:50px;
+    margin-bottom:20px;
+}
+
+.menu li.shop1{
+    background: url(../image/shop1.png) no-repeat;
+}
+.menu li.shop2{
+    background:url(../image/shop2.png) no-repeat;
+}
+.menu li.shou1{
+    background:url(../image/shou1.png) no-repeat;
+}
+.menu li.shou2{
+    background:url(../image/shou2.png) no-repeat;
+}
+.menu li.leveyu1{
+    background:url(../image/leveLanage.png) no-repeat;
+}
+.menu li.leveyu2{
+    background:  url(../image/leveyu2.png) no-repeat;
+}
+.moreStyle{
+    bottom: -8rem;
+}
+.moreStyle2 {
+    bottom: -5.5rem;
+}
+.moreStyle3{
+    bottom: -4.5rem;
+}
