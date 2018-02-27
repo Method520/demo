@@ -45,6 +45,8 @@
 .content1 .layout1 .shou{
     width:80px;
     height:25px;
+    position: relative;
+    z-index: 12;
     background:url('../image/notCollection.png') no-repeat;
 }
 .content1 .layout1 .shou2{
@@ -123,4 +125,16 @@
 }
 .homeLayer3{
     padding-bottom:50px!important;
+}
+.contentBg1{
+    background:#e9e5e2;
+}
+.contentBg3{
+    background:#F0F0F1 100%
+}
+.contentBg3 .layout1{
+    margin-top: 30px;
+}
+.contentBg3 .goodName{
+    padding-bottom: 16px;
 }
