@@ -146,7 +146,7 @@ li.scanner.active{
     padding-bottom:0px;
 }
 .homeLayer2 ul{
-    margin-top:2.5rem!important;
+    margin-top:2rem!important;
 }
 .homeLayer3 ul{
     margin-top: 1.5rem;
@@ -209,4 +209,11 @@ li.scanner.active{
 }
 #goodDetail2 .infoGood , #goodDetail3 .infoGood, #goodDetail5 .infoGood{
     padding:0 20px;
+}
+.layerclose{
+    position: relative;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    margin-top: 6px;
 }
