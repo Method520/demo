@@ -38,8 +38,16 @@ $(function(){
     $('.personCenter').click(function(){
         window.location.href='./home.html';
     })
-    $('.layer ul li').click(function(){
-        $(this).addClass('active').siblings().removeClass('active');
-        window.location.href='./detail.html';
+    $('.layer .yi').click(function(){
+        window.location.href='./goodDetail1.html';
+    })
+    $('.layer .shui').click(function(){
+        window.location.href='./goodDetail2.html';
+    })
+    $('.layer .jia').click(function(){
+        window.location.href='./goodDetail5.html';
+    })
+    $(' .layer .jiu').click(function(){
+        window.location.href='./goodDetail4.html';
     })
 })
