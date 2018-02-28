@@ -27,7 +27,7 @@
         <li class="goMain"> 体育赛事</li>
         <li class="goMain"> 私人玩具</li>
         <li class="jiu"> 美酒美食</li>
-        <li class="goMain"> 手机数码</li>
+        <li class="goBack"> 手机数码</li>
     </ul>
     <img src="./image/layerclose.png" class="layerclose"/>
 </div>
@@ -206,8 +206,10 @@
             $(this).siblings().removeClass('active');
             window.location.href="./scanner.html";
         })
+        var h = 0;
         $('.trangle').click(function(){
-            $(document).scrollTop(600);
+            h+=600;
+            $(document).scrollTop(h);
         })
     });
 </script>
