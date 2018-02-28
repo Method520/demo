@@ -11,7 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/common/common.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" href="./css/mine.css">
-  <title>我的订单</title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <title>预付金支付</title>
 </head>
 
 <body>
@@ -69,5 +70,10 @@
     document.querySelector('.header-back').addEventListener('click', function() {
       window.history.back();
     });
+    $(function(){
+        $('.pay-action .button-plain').click(function(){
+            window.history.go(-1);
+        })
+    })
   </script>
 </html>
