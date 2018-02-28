@@ -50,7 +50,32 @@ $(function(){
     $(' .layer .jiu').click(function(){
         window.location.href='./goodDetail4.html';
     })
+    $('.classical').click(function(){
+        $('.layer').css('display','block');
+    })
+    $('.goMain').click(function(){
+        window.location.href='./index.html';
+    })
+    $('.classical').click(function(){
+        $('.layer').css('display','block');
+        stopBodyScroll(true);
+    })
     $('.layerclose').click(function(){
         $('.layer').css('display','none');
+        stopBodyScroll(false);
     })
+
 })
+
+var top = 0
+function stopBodyScroll (isFixed) {
+    if (isFixed) {
+        top = window.scrollY
+        $('body').css('position','fixed');
+        $('body').css('top',-top+'px');
+    } else {
+        $('body').css('position','');
+        $('body').css('top','');
+        window.scrollTo(0, top) // 回到原先的top
+    }
+}
