@@ -29,7 +29,7 @@ body{
     margin-left: -8px;
     margin-top: 124px;
     position: relative;
-    z-index: 200;
+    z-index: 90;
 }
 .level02 .menu li{
     width:50px;

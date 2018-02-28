@@ -24,10 +24,10 @@
     float: left;
 }
 
-.footer ul li.classical{
+.footer ul li.classical,.footer ul li.classical1{
     background:url('../image/classical.png') no-repeat center;
 }
-.footer ul li.classical.active{
+.footer ul li.classical.active,.footer ul li.classical1.active{
     background:url('../image/classical2.png') no-repeat center;
 }
 li.personCenter{
