@@ -366,7 +366,7 @@
 }
 
 .pay-way_item > img {
-  max-height: 36px;
+  width: 108px;
 }
 
 
@@ -450,6 +450,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+
+.chat-item > img {
+  width: 50px;
 }
 
 .chat-item .chat-item_text {
