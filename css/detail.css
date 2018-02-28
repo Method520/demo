@@ -28,6 +28,8 @@ body{
     float:left;
     margin-left: -8px;
     margin-top: 124px;
+    position: relative;
+    z-index: 200;
 }
 .level02 .menu li{
     width:50px;
@@ -57,10 +59,10 @@ body{
     bottom: -8rem;
 }
 .moreStyle2 {
-    bottom: -5.5rem;
+    bottom: -7rem;
 }
 .moreStyle3{
-    bottom: -4.5rem;
+    bottom: -6rem;
 }
 .level01 img {
     /* margin-left: 20px; */

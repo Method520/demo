@@ -23,8 +23,8 @@ $(function(){
             $('.layer2').css('display','block');
         }
     })
-    $('.back').click(function(){
-        window.history.go(-1);
+    $('.goBack').click(function(){
+        window.location.href='./home.html';
     })
     $('.layer2').click(function(){
         $(this).css('display','none');
@@ -49,5 +49,8 @@ $(function(){
     })
     $(' .layer .jiu').click(function(){
         window.location.href='./goodDetail4.html';
+    })
+    $('.layerclose').click(function(){
+        $('.layer').css('display','none');
     })
 })
