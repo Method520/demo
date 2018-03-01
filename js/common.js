@@ -24,7 +24,7 @@ $(function(){
         }
     })
     $('.goBack').click(function(){
-        window.location.href='./home.html';
+        window.history.go(-1);
     })
     $('.layer2').click(function(){
         $(this).css('display','none');
@@ -39,16 +39,31 @@ $(function(){
         window.location.href='./home.html';
     })
     $('.layer .yi').click(function(){
-        window.location.href='./goodDetail1.html';
+        window.location.href='./warning.html';
+    })
+    $('.layer .zhu').click(function(){
+        window.location.href='./warning.html';
     })
     $('.layer .shui').click(function(){
         window.location.href='./goodDetail2.html';
     })
     $('.layer .jia').click(function(){
-        window.location.href='./goodDetail5.html';
+        window.location.href='./warning.html';
+    })
+    $('.layer .si').click(function(){
+        window.location.href='./warning.html';
+    })
+    $('.layer .ti').click(function(){
+        window.location.href='./warning.html';
+    })
+    $('.layer .mobile').click(function(){
+        window.location.href='./warning.html';
     })
     $(' .layer .jiu').click(function(){
         window.location.href='./goodDetail4.html';
+    })
+    $(' .layer .lv').click(function(){
+        window.location.href='./warning.html';
     })
     $('.classical').click(function(){
         $('.layer').css('display','block');

@@ -24,14 +24,13 @@ body{
     float:left;
     width:80%;
 }
-.level02 .menu{
-    float:left;
-    margin-left: -8px;
-    margin-top: 124px;
-    position: relative;
-    z-index: 90;
+ .menuList{
+     position: fixed;
+     z-index: 90;
+     top: 320px;
+     right: 20px;
 }
-.level02 .menu li{
+ .menu li{
     width:50px;
     height:50px;
     margin-bottom:20px;
