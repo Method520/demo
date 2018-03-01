@@ -8,20 +8,35 @@ $(function(){
     } else if(screen.width < 414) {
         $('.moreDetail').addClass('moreStyle')
     }
+    var name = $.getUrlParam('name');
     $('.menu .shop1').click(function(){
-        window.location.href='./pay.html';
-        // $(this).addClass('shop2');
+        if(name === '') {
+           $('.validate').css('display','block');
+        } else if(name === 'admin') {
+            window.location.href='./pay.html';
+        }
 
+        // $(this).addClass('shop2');
     })
     $('.menu .leveyu1').click(function(){
         // $(this).toggleClass('leveyu2');
-        window.location.href='./chat.html';
+        if(name === '') {
+            $('.validate').css('display','block');
+        } else if(name === 'admin') {
+            window.location.href='./chat.html';
+        }
+
     })
     $('.menu .shou1').click(function(){
-        $(this).toggleClass('shou2');
-        if($(this).hasClass('shou2')) {
-            $('.layer2').css('display','block');
+        if(name === '') {
+            $('.validate').css('display','block');
+        } else if(name === 'admin') {
+            $(this).toggleClass('shou2');
+            if($(this).hasClass('shou2')) {
+                $('.layer2').css('display','block');
+            }
         }
+
     })
     $('.goBack').click(function(){
         window.history.go(-1);

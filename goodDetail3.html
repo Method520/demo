@@ -63,6 +63,10 @@
     <p>收藏成功~</p>
     <div><img src="./image/layerclose.png" class="layerclose"/></div>
 </div>
+<div class="layer2 validate">
+    <p>请先登录~</p>
+    <div><img src="./image/layerclose.png" class="layerclose"/></div>
+</div>
 <div class="menuList">
     <ul class="menu">
         <li class="shop1" id="shop1">
@@ -75,6 +79,7 @@
 </div>
 </body>
 <script>
+    var name = $.getUrlParam('name');
     window.onload = function(){
         if(screen.width === 375 && screen.height===812) {
             $('.level02').addClass('levelmoreStyle1');

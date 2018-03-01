@@ -74,6 +74,7 @@
 </body>
 <script>
     $(function(){
+        var name = $.getUrlParam('name');
         $('.back').click(function(){
             window.history.go(-1);
         })
@@ -81,13 +82,13 @@
             $(this).addClass('active').siblings().removeClass('active');
         })
         $('.collectionList  ul li#good1').click(function(){
-            window.location.href='./detail.html';
+            window.location.href='./detail.html?name='+name;
         })
         $('.collectionList  ul li#good2').click(function(){
-            window.location.href='./goodDetail1.html';
+            window.location.href='./goodDetail1.html?name='+name;
         })
         $('.collectionList  ul li#good3').click(function(){
-            window.location.href='./goodDetail2.html';
+            window.location.href='./goodDetail2.html?name='+name;
         })
     })
 
