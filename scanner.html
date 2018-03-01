@@ -29,27 +29,29 @@
     <div class="footer">
         <ul>
             <li class="classical"></li>
-            <li class="personCenter"></li>
             <li class="scanner active"></li>
+            <li class="personCenter"></li>
+
         </ul>
     </div>
     <div class="layer">
         <ul>
             <li class="yi"> 艺术鉴赏</li>
-            <li class="goMain"> 珠宝腕表</li>
+            <li class="zhu"> 珠宝腕表</li>
             <li class="shui"> 水晶瓷器</li>
             <li class="jia"> 家具生活</li>
-            <li class="goMain"> 旅行发现</li>
-            <li class="goMain"> 体育赛事</li>
-            <li class="goMain"> 私人玩具</li>
+            <li class="lv"> 旅行发现</li>
+            <li class="ti"> 体育赛事</li>
+            <li class="si"> 私人玩具</li>
             <li class="jiu"> 美酒美食</li>
-            <li class="goMain"> 手机数码</li>
+            <li class="mobile"> 手机数码</li>
         </ul>
         <img src="./image/layerclose.png" class="layerclose"/>
     </div>
 </body>
 <script>
     $(function(){
+        var name = $.getUrlParam('name');
         setTimeout(function(){
             window.location.href='./detail.html';
         },3000)
@@ -61,7 +63,7 @@
             $('.layer').addClass('homeLayer2');
         }
         $('.personCenter').click(function(){
-            window.location.href='./home.html';
+            window.location.href='./home.html?name='+name;
         })
         $('.classical').click(function(){
             $('.layer').css('display','block');
@@ -72,6 +74,7 @@
             $(this).addClass('active').siblings().removeClass('active');
             window.location.href='./detail.html';
         })
+        $('.scanner').unbind('click')
     })
 
 </script>
