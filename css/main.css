@@ -102,7 +102,21 @@ li.scanner.active{
     color: #fff;
     top: 7px;
 }
-
+.layer2 .button{
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid #BC9972;
+    line-height: 30px;
+    text-align: center;
+    top: 63px;
+}
+.layer2 .confirm{
+    left: 37px;
+}
+.layer2 .cancel{
+   right:39px;
+}
 .layer{
     position:fixed;
     background:rgb(0,0,0);

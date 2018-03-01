@@ -94,6 +94,12 @@ $(function(){
         $('.layer').css('display','none');
         stopBodyScroll(false);
     })
+    $('.layer2 .confirm').click(function(){
+       window.location.href='./login.html';
+    })
+    $('.layer2 .cancel').click(function(){
+        $('.layer2').css('display','none')
+    })
 
 })
 
