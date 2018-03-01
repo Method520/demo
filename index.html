@@ -1,214 +1,188 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta content="telephone=no" name="format-detection"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/common.js"></script>
-    <title></title>
-</head>
-<body>
-<div class="layer">
-    <ul>
-        <li class="yi"> 艺术鉴赏</li>
-        <li class="goMain"> 珠宝腕表</li>
-        <li class="shui"> 水晶瓷器</li>
-        <li class="jia"> 家具生活</li>
-        <li class="goMain"> 旅行发现</li>
-        <li class="goMain"> 体育赛事</li>
-        <li class="goMain"> 私人玩具</li>
-        <li class="jiu"> 美酒美食</li>
-        <li class="goMain"> 手机数码</li>
-    </ul>
-    <img src="./image/layerclose.png" class="layerclose"/>
-</div>
-    <div class="commonHead">
-        <div class="search">
-            <img src="./image/search_icon.png"/><input type="text" placeholder="搜索"/>
-        </div>
-    </div>
-    <div class="content1">
-        <div class="content-lay1">
-            <div class="goodName">和平餐具瓷盘</div>
-            <img src="./image/1@3x.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
-            </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。
-            </p>
-        </div>
-    </div>
+<html lang="en">
 
-    <div class="content1 contentBg1 goods1">
-        <div class="content-lay1">
-            <div class="goodName">大明潮系列-金顶</div>
-            <img src="./image/ka2.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
+<head>
+  <meta charset="UTF-8">
+  <title>列表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta content="telephone=no" name="format-detection" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" type="text/css" href="css/common/common.css" />
+  <link rel="stylesheet" href="./css/mine.css">
+  <style>
+    html,
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li>
+        <a href="#">艺术鉴赏</a>
+      </li>
+      <li>
+        <a href="#">珠宝腕表</a>
+      </li>
+      <li>
+        <a href="#">水晶瓷器</a>
+      </li>
+      <li>
+        <a href="#">家具生活</a>
+      </li>
+      <li>
+        <a href="#">旅行发现</a>
+      </li>
+      <li>
+        <a href="#">体育赛事</a>
+      </li>
+      <li>
+        <a href="#">私人玩具</a>
+      </li>
+      <li>
+        <a href="#">美酒美食</a>
+      </li>
+      <li>
+        <a href="#">手机数码</a>
+      </li>
+      <li class="sidebar-close"></li>
+    </ul>
+  </div>
+  <div class="mainbody offcanvas">
+    <div class="searchbar">
+      <input type="text">
+    </div>
+    <div id="fullpage" class="fullpage">
+      <div class="section">
+        <div class="section-main" id="1">
+          <div class="section-head">
+            <h5>清 • 雍正</h5>
+            <h3>绿釉梅瓶</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <img src="./image/bottle.png" alt="">
             </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。
-            </p>
-        </div>
-    </div>
-    <div class="content1 goods2">
-        <div class="content-lay1">
-            <div class="goodName">贝壳高脚盘(瓷器)</div>
-            <img src="./image/ka3.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
+            <div class="content-action" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>收藏</span>
             </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                1760年，法国皇室下令让塞夫尔获得镀金装饰的独家制作权。虽然之后此项法令被其他工厂——如由法国王子资助，而后却被废弃的索镇制造局与尚蒂伊制造局等打破——镀金依然是象征高雅、奢华而又独特的塞夫尔的瓷器语言。镀金装饰使得原本沉谧精幽、萤洁剔透的塞夫尔瓷，散发出如珠宝玉石般的炫目光彩。
-            </p>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>孔雀绿釉亦称吉翠釉、翡翠釉，是典型的低温釉，以铜为着色剂，最早的实物见于宋代，以后的金元明清都有烧制，由于烧成温度低，胎釉结合不好，故见到的孔雀绿器物多有剥釉现象。</dd>
+          </dl>
         </div>
-    </div>
-    <div class="content1 contentBg3 goods3">
-        <div class="content-lay1">
-            <div class="goodName">法拉荣歌干红葡萄酒</div>
-            <img src="./image/ka4.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
+      </div>
+      <div class="section">
+        <div class="section-main" id="2">
+          <div class="section-head">
+            <h5>东汉</h5>
+            <h3>马踏飞燕</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <img src="./image/horse.png" alt="">
             </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                酒品描述：偏重度酒体结构优雅、细腻，同时平衡感十足。樱桃红酒裙闪亮而厚重。此款酒香气复杂而层次分明，混合红色浆果、甘草等香气，回味绵长。
-            </p>
-        </div>
-    </div>
-    <div class="content1 contentBg3 goods4">
-        <div class="content-lay1">
-            <div class="goodName">绿卡干红葡萄酒</div>
-            <img src="./image/ka5.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
+            <div class="content-action active" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>已收藏</span>
             </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                酒品描述：偏重度酒体结构优雅、细腻，同时平衡感十足。樱桃红酒裙闪亮而厚重。此款酒香气复杂而层次分明，混合红色浆果、甘草等香气，回味绵长。
-            </p>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>马踏飞燕又名马超龙雀、铜奔马、马袭乌鸦、鹰（鹞）掠马、马踏飞隼、凌云奔马[1] 等，为东汉青铜器，1969年出土于甘肃省武威市雷台汉墓。东汉时期镇守张掖的军事长官张江及其妻合葬墓中出土，现藏甘肃省博物馆。</dd>
+          </dl>
         </div>
+      </div>
     </div>
-    <div class="content1 contentBg3 goods5">
-        <div class="content-lay1">
-            <div class="goodName">紫玉秋沙河谷</div>
-            <img src="./image/ka6.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
-            </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                香港恒丰集团是一个多元化的 集团公司(港台背景),旗下 包含紫玉地产、在之禾度假酒 店、紫玉乡村俱乐部以及北京 集祥物业管理有限公司。 进驻中国大陆地区40余年,经 营产业涉及投资、地产开发、 工业、酒店、旅游度假等,同 时也致力于发展两岸三地的政 治、经济、文化交流。 经济实力雄厚、信誉优良,尤 其在生态文化旅游产业方面, 成为行业的典范。
-            </p>
-        </div>
+    <div class="actionbar">
+      <div class="menu-bar"></div>
+      <div class="tip-bar"></div>
+      <div class="scan-bar"></div>
     </div>
-    <div class="content1 contentBg4 goods6">
-        <div class="content-lay1">
-            <div class="goodName">LUNARIS MOSAIC</div>
-            <img src="./image/ka7.png"/>
-        </div>
-        <div class="layout1">
-            <div class="shou"></div>
-            <div class="next">
-                <img src="./image/next.png" class="nextImage"/>
-            </div>
-            <p class="price">¥500，000</p>
-            <p class="collInfo">
-                香港恒丰集团是一个多元化的 集团公司(港台背景),旗下 包含紫玉地产、在之禾度假酒 店、紫玉乡村俱乐部以及北京 集祥物业管理有限公司。 进驻中国大陆地区40余年,经 营产业涉及投资、地产开发、 工业、酒店、旅游度假等,同 时也致力于发展两岸三地的政 治、经济、文化交流。 经济实力雄厚、信誉优良,尤 其在生态文化旅游产业方面, 成为行业的典范。
-            </p>
-        </div>
-    </div>
-    <div class="trangle"></div>
-    <div class="footer">
-        <ul>
-            <li class="classical active"></li>
-            <li class="personCenter"></li>
-            <li class="scanner"></li>
-        </ul>
-    </div>
-</body>
-<script>
-    $(document).ready(function(){
-        if(screen.width === 375 && screen.height===812) {
-            $('.layer').addClass('homeLayer');
-        } else if(screen.width === 375 && screen.height === 667){
-            $('.layer').addClass('homeLayer3');
-        }else if(screen.width === 414 && screen.height === 736){
-            $('.layer').addClass('homeLayer2');
-            $('.trangle').css('margin-left','-18px');
-            $('.contentBg3 .content-lay1 img').css('width',screen.width);
-        }else if(screen.width === 414 || screen.width > 414) {
-            $('.contentBg3 .content-lay1 img').css('width',screen.width);
+  </div>
+  <script src="./js/fullpage.min.js"></script>
+  <script>
+
+    var direction = null;
+    var halfClientWidth = document.documentElement.clientWidth / 2;
+    new AlloyTouch({
+      touch: '#fullpage',
+      vertical: false,
+      touchStart: function (evt) {
+        evt.stopPropagation();
+        direction = evt.touches[0].clientX >= halfClientWidth ? 'right' : 'left';
+      },
+      bindSelf: true,
+      touchEnd: function (evt) {
+        evt.stopPropagation();
+        var currentSection = evt.path.filter(function (item) {
+          return item.className && item.className === 'section-main';
+        })[0];
+        if (direction === 'right' && evt.changedTouches[0].clientX <= halfClientWidth) {
+          window.location.href = './goodDetail' + currentSection.id + '.html'
         }
-       $('.layout1 .shou').click(function(){
-           $(this).toggleClass('shou2');
-       })
-        $('.next').click(function(){
-            window.location.href="./detail.html";
-        })
-        $('.goods1 .next').click(function(){
-            window.location.href="./goodDetail1.html";
-        })
-        $('.goods2 .next').click(function(){
-            window.location.href="./goodDetail2.html";
-        })
-        $('.goods3 .next').click(function(){
-            window.location.href="./goodDetail3.html";
-        })
-        $('.goods4 .next').click(function(){
-            window.location.href="./goodDetail4.html";
-        })
-        $('.goods5 .next').click(function(){
-            window.location.href="./goodDetail5.html";
-        })
-        $('.personCenter').click(function(){
-            var name = $.getUrlParam('name');
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            window.location.href='./home.html?name='+name;
-        })
-        $('.classical').click(function(){
-           $('.layer').css('display','block');
-        })
-        $('.scanner').click(function(){
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            window.location.href="./scanner.html";
-        })
-        $('.trangle').click(function(){
-            $(document).scrollTop(600);
-        })
+        if (direction === 'left' && evt.changedTouches[0].clientX >= halfClientWidth) {
+          document.querySelector('.sidebar').className = 'sidebar offcanvas-left';
+          document.querySelector('.mainbody').className = 'mainbody offcanvas-right';
+        }
+      }
     });
-</script>
+    new AlloyTouch({
+      touch: '#sidebar',
+      vertical: false,
+      touchStart: function (evt) {
+        evt.stopPropagation();
+        direction = evt.touches[0].clientX >= halfClientWidth ? 'right' : 'left';
+      },
+      bindSelf: true,
+      touchEnd: function (evt) {
+        evt.stopPropagation();
+        if (direction === 'right' && evt.changedTouches[0].clientX <= halfClientWidth) {
+          document.querySelector('.sidebar').className = 'sidebar';
+          document.querySelector('.mainbody').className = 'mainbody';
+        }
+      }
+    });
+
+    document.querySelector('.menu-bar').addEventListener('click', function(e) {
+      document.querySelector('.sidebar').className = 'sidebar offcanvas-left';
+      document.querySelector('.mainbody').className = 'mainbody offcanvas-right';
+    }, false);
+    document.querySelector('.sidebar-close').addEventListener('click', function(e) {
+      document.querySelector('.sidebar').className = 'sidebar';
+      document.querySelector('.mainbody').className = 'mainbody';
+    }, false);
+    document.querySelector('.scan-bar').addEventListener('click', function(e) {
+      window.location.href = './scanner.html';
+    }, false);
+
+    var fp = new AlloyTouch.FullPage('#fullpage', {
+      animationEnd: function () {
+      },
+      leavePage: function (index) {
+      },
+      beginToPage: function (index) {
+      }
+    });
+
+    function handleCollect(e) {
+      var active = e.className.indexOf('active') !== -1;
+      if (active) {
+        e.className = e.className.replace('active', '');
+        e.querySelector('span').innerText = '收藏';
+      } else {
+        e.className = e.className += ' active';
+        e.querySelector('span').innerText = '已收藏';
+      }
+    }
+
+  </script>
+
+</body>
+
 </html>
