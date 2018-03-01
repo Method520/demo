@@ -193,7 +193,7 @@
             window.location.href="./goodDetail5.html";
         })
         $('.personCenter').click(function(){
-            var name = $.getUrlParam('name');
+            var name = null;
             $(this).addClass('active');
             $(this).siblings().removeClass('active');
             window.location.href='./home.html?name='+name;

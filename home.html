@@ -20,7 +20,7 @@
     <div class="head">
         <img src="./image/logo.png"/>
         <input class="button" id="login" value="登陆 / 注册"/>
-        <!--<div class="username" style="text-align:center;color: #fff;margin-top:180px;"></div>-->
+        <!--<div class="username" style="text-align:center;color: #fff;margin-top:180px;display:none;"></div>-->
     </div>
     <div class="content">
         <table>
@@ -89,28 +89,46 @@
         }
         var name = $.getUrlParam('name');
         $('.username').html(name);
-        console.log(name);
         $('.head input').click(function(){
            window.location.href='./login.html';
         })
         $('.scanner').click(function(){
-            window.location.href='./scanner.html';
+            window.location.href='./scanner.html?name='+name;
         })
         $('.myColl').click(function(){
-            window.location.href='./collection.html';
+            if(name === 'null') {
+                alert('请先登录')
+            } else if(name === 'admin'){
+                window.location.href='./collection.html';
+            }
         })
         $('.mylog').click(function(){
-            window.location.href='./orders.html';
+            if(name === 'null') {
+                alert('请先登录')
+            } else if(name === 'admin'){
+                window.location.href='./orders.html';
+            }
         })
         $('.myji').click(function(){
-            window.location.href='./integrals.html';
+            if(name === 'null') {
+                alert('请先登录')
+            } else if(name === 'admin'){
+                window.location.href='./integrals.html';
+            }
+
         })
         $('.myConsult').click(function(){
-            window.location.href='./messages.html';
+            if(name === 'null') {
+                alert('请先登录')
+            } else if(name === 'admin'){
+                window.location.href='./messages.html';
+            }
+
         })
         $('.classical1').click(function(){
             $('.layer').css('display','block');
         })
+        $('.personCenter').unbind('click');
     })
 </script>
 </html>

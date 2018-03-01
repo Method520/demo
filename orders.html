@@ -11,15 +11,17 @@
   <link rel="stylesheet" type="text/css" href="css/common/common.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" href="./css/mine.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/util.js"></script>
+  <script scr="js/common.js"></script>
   <title>我的订单</title>
 </head>
 
 <body>
   <div class="page">
     <div class="page-header">
-      <div class="header-back">
+      <div class="header-back goBack">
         <i class="icon icon-back"></i>
-        个人中心
       </div>
       <div class="header-title">
         我的购买记录
@@ -63,8 +65,8 @@
   </div>
 </body>
 <script>
-    document.querySelector('.header-back').addEventListener('click', function() {
-      window.location.href = './home.html';
-    });
+    $('.goBack').click(function(){
+        window.history.go(-1);
+    })
   </script>
 </html>

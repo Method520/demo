@@ -51,6 +51,7 @@
 </body>
 <script>
     $(function(){
+        var name = $.getUrlParam('name');
         setTimeout(function(){
             window.location.href='./detail.html';
         },3000)
@@ -62,7 +63,7 @@
             $('.layer').addClass('homeLayer2');
         }
         $('.personCenter').click(function(){
-            window.location.href='./home.html';
+            window.location.href='./home.html?name='+name;
         })
         $('.classical').click(function(){
             $('.layer').css('display','block');
@@ -73,6 +74,7 @@
             $(this).addClass('active').siblings().removeClass('active');
             window.location.href='./detail.html';
         })
+        $('.scanner').unbind('click')
     })
 
 </script>

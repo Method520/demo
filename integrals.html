@@ -18,9 +18,8 @@
 <body>
   <div class="page">
     <div class="page-header">
-      <div class="header-back">
+      <div class="header-back goBack">
         <i class="icon icon-back"></i>
-        个人中心
       </div>
       <div class="header-title">
         我的积分
@@ -125,14 +124,14 @@
   </div>
 </body>
 <script>
-    document.querySelector('.header-back').addEventListener('click', function() {
-      window.location.href = './home.html';
-    });
     $(function(){
       $('.button').click(function(){
           $(this).addClass('active');
           $(this).parent().siblings().children().removeClass('active');
       })
+        $('.goBack').click(function(){
+            window.history.go(-1);
+        })
     })
   </script>
 </html>
