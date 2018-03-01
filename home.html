@@ -68,6 +68,10 @@
         </ul>
           <img src="./image/layerclose.png" class="layerclose"/>
     </div>
+    <div class="layer2">
+        <p>请先登录</p>
+        <div> <img src="./image/layerclose.png" class="layerclose"/></div>
+    </div>
 </body>
 <script>
     $(function(){
@@ -97,21 +101,21 @@
         })
         $('.myColl').click(function(){
             if(name === 'null') {
-                alert('请先登录')
+               $('.layer2').css('display','block');
             } else if(name === 'admin'){
                 window.location.href='./collection.html';
             }
         })
         $('.mylog').click(function(){
             if(name === 'null') {
-                alert('请先登录')
+                $('.layer2').css('display','block');
             } else if(name === 'admin'){
                 window.location.href='./orders.html';
             }
         })
         $('.myji').click(function(){
             if(name === 'null') {
-                alert('请先登录')
+                $('.layer2').css('display','block');
             } else if(name === 'admin'){
                 window.location.href='./integrals.html';
             }
@@ -119,7 +123,7 @@
         })
         $('.myConsult').click(function(){
             if(name === 'null') {
-                alert('请先登录')
+                $('.layer2').css('display','block');
             } else if(name === 'admin'){
                 window.location.href='./messages.html';
             }
