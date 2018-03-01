@@ -639,14 +639,22 @@
   width: 100%;
   height: 100%;
   /* background-color: rgba(0, 0, 0, 0.1); */
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .sidebar ul {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
   padding: 60px 30px;
   width: 60%;
   height: 100%;
@@ -673,17 +681,22 @@
 }
 
 .offcanvas-left {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .offcanvas-right {
-  transform: translateX(60%);
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .mainbody {
   height: 100vh;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -716,9 +729,15 @@
   z-index: 1001;
   left: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
   width: 100%;
   height: 50px;
 }
@@ -784,9 +803,15 @@
   position: absolute;
   left: 15px;
   bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
   width: 5em;
   height: 1.6em;
   line-height: 0;
