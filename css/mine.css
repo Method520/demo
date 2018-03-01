@@ -754,7 +754,7 @@
 }
 
 .section .section-head {
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -773,7 +773,7 @@
 
 .section .section-content {
   position: relative;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .section-content .content-img {
@@ -833,6 +833,6 @@
 .section-footer dd {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
