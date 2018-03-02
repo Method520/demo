@@ -92,7 +92,7 @@ li.scanner.active{
  }
  .layer2 p{
      text-align: center;
-     line-height: 100px;
+     margin-top: 21px;
      color: #fff;
  }
 
@@ -112,7 +112,7 @@ li.scanner.active{
     top: 63px;
 }
 .layer2 .confirm{
-    left: 37px;
+    left: 73px;
 }
 .layer2 .cancel{
    right:39px;
