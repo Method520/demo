@@ -728,10 +728,12 @@
 }
 .content-action.active1{
 
-  background:url('../image/haveNotColl.png')
+  background:url('../image/havenotshou.png') center;
+  background-size: 80px;
 }
 .content-action.active2{
-  background:url('../image/haveColl.png')
+  background:url('../image/yishoucang.png') center;
+  background-size: 80px;
 }
 .actionbar {
   position: fixed;
@@ -812,11 +814,11 @@
 .section-content .content-img .next-icon {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 10px;
   width: 50px;
   height: 50px;
-  background-image: url('../image/next.png');
-  background-size: contain;
+  background-image: url('../image/next2.png');
+  background-size: 50px;
 }
 
 .section-content .content-img > img {
@@ -825,7 +827,7 @@
 
 .section-content .content-action {
   position: absolute;
-  left: 15px;
+  left: 20px;
   bottom: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -861,7 +863,7 @@
 }
 
 .section .section-footer {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .section-footer {
@@ -885,4 +887,5 @@
   font-size: 14px;
   line-height: 33px;
   color: #BC9972!important;
+  font-weight:100;
 }

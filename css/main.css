@@ -67,8 +67,9 @@ li.scanner.active{
 }
  .moreDetail{
     padding-right:20px;
-     padding-right: 20px;
      position: absolute;
+     padding-bottom:20px;
+     font-weight:100;
 }
  .moreDetail  p{
     font-family: NotoSansHans-DemiLight;
@@ -76,6 +77,7 @@ li.scanner.active{
     color: #BC9972;
     line-height: 30px;
     text-align:right;
+     font-weight:100;
 }
  .layer2{
      position: fixed;

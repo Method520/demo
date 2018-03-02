@@ -10,8 +10,9 @@ $(function(){
     }
     var name = $.getUrlParam('name');
     $('.menu .shop1').click(function(){
-        if(name === 'null') {
+        if(name === 'null' || name === '') {
            $('.validate').css('display','block');
+            $('.validate').css('display','block');
         } else if(name === 'admin') {
             // $('.menu .shop1').toggleClass('shop2')
             window.location.href='./pay.html';
@@ -21,7 +22,7 @@ $(function(){
     })
     $('.menu .leveyu1').click(function(){
         // $(this).toggleClass('leveyu2');
-        if(name === 'null') {
+        if(name === 'null' ||  name=== '') {
             $('.validate').css('display','block');
         } else if(name === 'admin') {
             window.location.href='./chat.html';
@@ -29,7 +30,7 @@ $(function(){
 
     })
     $('.menu .shou1').click(function(){
-        if(name === 'null') {
+        if(name === 'null' || name === '') {
             $('.validate').css('display','block');
         } else if(name === 'admin') {
             $(this).toggleClass('shou2');
