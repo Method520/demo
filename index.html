@@ -9,11 +9,8 @@
   <meta http-equiv="x-dns-prefetch-control" content="on">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" type="text/css" href="css/common/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" href="./css/mine.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css"/>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/util.js"></script>
-  <script src="js/common.js"></script>
   <style>
     html,
     body {
@@ -32,7 +29,7 @@
         <a href="./warning.html">珠宝腕表</a>
       </li>
       <li>
-        <a href="./detail.html?name="+name>水晶瓷器</a>
+        <a href="./detail.html?name=" +name>水晶瓷器</a>
       </li>
       <li>
         <a href="./warning.html">家具生活</a>
@@ -47,7 +44,7 @@
         <a href="./warning.html">私人玩具</a>
       </li>
       <li>
-        <a href="./goodDetail3.html?name="+name>美酒美食</a>
+        <a href="./goodDetail3.html?name=" +name>美酒美食</a>
       </li>
       <li>
         <a href="./warning.html">手机数码</a>
@@ -61,14 +58,16 @@
     </div>
     <div id="fullpage" class="fullpage">
       <div class="section">
-        <div class="section-main" id="1">
+        <div class="section-main" id="0">
           <div class="section-head">
-            <h5>清 • 雍正</h5>
-            <h3>绿釉梅瓶</h3>
+            <!-- <h5>清 • 雍正</h5> -->
+            <h3>和平餐具瓷盘</h3>
           </div>
           <div class="section-content">
             <div class="content-img">
-              <img src="./image/bottle.png" alt="">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka1.png" alt="">
             </div>
             <div class="content-action" onclick="handleCollect(this)">
               <i class="heart"></i>
@@ -77,19 +76,21 @@
           </div>
           <dl class="section-footer">
             <dt>￥500,000</dt>
-            <dd>孔雀绿釉亦称吉翠釉、翡翠釉，是典型的低温釉，以铜为着色剂，最早的实物见于宋代，以后的金元明清都有烧制，由于烧成温度低，胎釉结合不好，故见到的孔雀绿器物多有剥釉现象。</dd>
+            <dd>此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。</dd>
           </dl>
         </div>
       </div>
-      <div class="section">
-        <div class="section-main" id="2">
+      <div class="section" style="background-color:#e9e5e2;">
+        <div class="section-main" id="1">
           <div class="section-head">
-            <h5>东汉</h5>
-            <h3>马踏飞燕</h3>
+            <!-- <h5>东汉</h5> -->
+            <h3>大明潮系列-金顶</h3>
           </div>
           <div class="section-content">
             <div class="content-img">
-              <img src="./image/horse.png" alt="">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka2.png" alt="">
             </div>
             <div class="content-action active" onclick="handleCollect(this)">
               <i class="heart"></i>
@@ -98,15 +99,133 @@
           </div>
           <dl class="section-footer">
             <dt>￥500,000</dt>
-            <dd>马踏飞燕又名马超龙雀、铜奔马、马袭乌鸦、鹰（鹞）掠马、马踏飞隼、凌云奔马[1] 等，为东汉青铜器，1969年出土于甘肃省武威市雷台汉墓。东汉时期镇守张掖的军事长官张江及其妻合葬墓中出土，现藏甘肃省博物馆。</dd>
+            <dd>此套餐具的“联合”主题装饰由保罗·夏尔曼尼(Paul Charlemagne)在 1953年为法国驻华大使馆设计。艺术家特别选择了和平的象征—镀金 鸽子,来装饰餐盘边口。2006年,这套作品被特别再制,在塞夫尔举办 的《50年代》主题展览中展出。</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-main" id="2">
+          <div class="section-head">
+            <!-- <h5>清 • 雍正</h5> -->
+            <h3>贝壳高脚盘(瓷器)</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka3.png" alt="">
+            </div>
+            <div class="content-action" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>收藏</span>
+            </div>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>1760年，法国皇室下令让塞夫尔获得镀金装饰的独家制作权。虽然之后此项法令被其他工厂——如由法国王子资助，而后却被废弃的索镇制造局与尚蒂伊制造局等打破——镀金依然是象征高雅、奢华而又独特的塞夫尔的瓷器语言。镀金装饰使得原本沉谧精幽、萤洁剔透的塞夫尔瓷，散发出如珠宝玉石般的炫目光彩。</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="section" style="background-color:#f0f0f1;">
+        <div class="section-main" id="3">
+          <div class="section-head">
+            <!-- <h5>清 • 雍正</h5> -->
+            <h3>法拉荣歌干红葡萄酒</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka4.png" alt="">
+            </div>
+            <div class="content-action" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>收藏</span>
+            </div>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>酒品描述：偏重度酒体结构优雅、细腻，同时平衡感十足。樱桃红酒裙闪亮而厚重。此款酒香气复杂而层次分明，混合红色浆果、甘草等香气，回味绵长。</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="section" style="background-color:#f0f0f1;">
+        <div class="section-main" id="4">
+          <div class="section-head">
+            <!-- <h5>清 • 雍正</h5> -->
+            <h3>绿卡干红葡萄酒</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka5.png" alt="">
+            </div>
+            <div class="content-action" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>收藏</span>
+            </div>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>酒品描述：偏重度酒体结构优雅、细腻，同时平衡感十足。樱桃红酒裙闪亮而厚重。此款酒香气复杂而层次分明，混合红色浆果、甘草等香气，回味绵长。</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-main" id="5">
+          <div class="section-head">
+            <!-- <h5>清 • 雍正</h5> -->
+            <h3>紫玉秋沙河谷</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka6.png" alt="">
+            </div>
+            <div class="content-action" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>收藏</span>
+            </div>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>香港恒丰集团是一个多元化的 集团公司(港台背景),旗下 包含紫玉地产、在之禾度假酒 店、紫玉乡村俱乐部以及北京 集祥物业管理有限公司。 进驻中国大陆地区40余年,经 营产业涉及投资、地产开发、 工业、酒店、旅游度假等,同
+              时也致力于发展两岸三地的政 治、经济、文化交流。 经济实力雄厚、信誉优良,尤 其在生态文化旅游产业方面, 成为行业的典范。</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-main" id="6">
+          <div class="section-head">
+            <!-- <h5>清 • 雍正</h5> -->
+            <h3>LUNARIS MOSAIC</h3>
+          </div>
+          <div class="section-content">
+            <div class="content-img">
+              <i class="next-icon" onclick="viewDetail(this)">
+              </i>
+              <img src="./image/ka7.png" alt="">
+            </div>
+            <div class="content-action" onclick="handleCollect(this)">
+              <i class="heart"></i>
+              <span>收藏</span>
+            </div>
+          </div>
+          <dl class="section-footer">
+            <dt>￥500,000</dt>
+            <dd>RWIN SATTLER 与全球顶级马赛克品牌 SICIS 合作,推出限量定制作品 LUNARIS MOSAIC。 LUNARIS 采用 ERWIN SATTLER 高精度制钟技术,配合 SICIS 顶级 MICRO-MOSAIC
+              产品,由制 钟师和镶嵌师纯手工完成整个作品。LUNARIS 外部结构采用无框水晶玻璃钟壳和镀铬黄铜磨件,通过 充满艺术感的马赛克镶嵌,与内部结构形成互动,呈现出独特的视觉效果。 表面镶嵌有独特图案的镀银黄铜钟盘,配合手工制成的蓝钢指针及手绘月相,形成独特的意象,“LU-
+              NARIS”的本意即与月亮有关,这款桌钟每小时会敲响一次,象征“伴随月光消逝的敲击声“,实现了 工艺、设计、审美及意境之间的平衡。</dd>
           </dl>
         </div>
       </div>
     </div>
     <div class="actionbar">
       <div class="menu-bar"></div>
-      <!--<div class="tip-bar"></div>-->
       <div class="scan-bar"></div>
+      <div class="user-bar"></div>
     </div>
   </div>
   <div class="layer2">
@@ -138,7 +257,7 @@
         }
         if (direction === 'left' && evt.changedTouches[0].clientX >= halfClientWidth) {
           document.querySelector('.sidebar').className = 'sidebar offcanvas-left';
-          document.querySelector('.mainbody').className = 'mainbody offcanvas-right';
+          // document.querySelector('.mainbody').className = 'mainbody offcanvas-right';
         }
       }
     });
@@ -154,21 +273,29 @@
         evt.stopPropagation();
         if (direction === 'right' && evt.changedTouches[0].clientX <= halfClientWidth) {
           document.querySelector('.sidebar').className = 'sidebar';
-          document.querySelector('.mainbody').className = 'mainbody';
+          // document.querySelector('.mainbody').className = 'mainbody';
         }
       }
     });
 
-    document.querySelector('.menu-bar').addEventListener('click', function(e) {
+    function viewDetail(e) {
+      var id = e.parentNode.parentNode.parentNode.id;
+      window.location.href = './goodDetail' + id + '.html'
+    }
+
+    document.querySelector('.menu-bar').addEventListener('click', function (e) {
       document.querySelector('.sidebar').className = 'sidebar offcanvas-left';
       document.querySelector('.mainbody').className = 'mainbody offcanvas-right';
     }, false);
-    document.querySelector('.sidebar-close').addEventListener('click', function(e) {
+    document.querySelector('.sidebar-close').addEventListener('click', function (e) {
       document.querySelector('.sidebar').className = 'sidebar';
       document.querySelector('.mainbody').className = 'mainbody';
     }, false);
-    document.querySelector('.scan-bar').addEventListener('click', function(e) {
+    document.querySelector('.scan-bar').addEventListener('click', function (e) {
       window.location.href = './scanner.html';
+    }, false);
+    document.querySelector('.user-bar').addEventListener('click', function (e) {
+      window.location.href = './home.html';
     }, false);
 
     var fp = new AlloyTouch.FullPage('#fullpage', {
@@ -180,17 +307,20 @@
       }
     });
 
+    document.querySelector('.layerclose').addEventListener('click', function (e) {
+      document.querySelector('.layer2').style.display = 'none';
+    }, false)
     function handleCollect(e) {
-      $('.layer2').css('display','block');
+      document.querySelector('.layer2').style.display = 'block';
+      /* e.querySelector('span').innerText = '收藏';
+      var active = e.className.indexOf('active') !== -1;
+      if (active) {
+        e.className = e.className.replace('active', '');
         e.querySelector('span').innerText = '收藏';
-      // var active = e.className.indexOf('active') !== -1;
-      // if (active) {
-      //   e.className = e.className.replace('active', '');
-      //   e.querySelector('span').innerText = '收藏';
-      // } else {
-      //   e.className = e.className += ' active';
-      //   e.querySelector('span').innerText = '已收藏';
-      // }
+      } else {
+        e.className = e.className += ' active';
+        e.querySelector('span').innerText = '已收藏';
+      } */
     }
 
   </script>
