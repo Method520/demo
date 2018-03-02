@@ -27,7 +27,7 @@ body{
  .menuList{
      position: fixed;
      z-index: 90;
-     top: 320px;
+     bottom: 0px;
      right: 20px;
 }
  .menu li{
@@ -36,24 +36,6 @@ body{
     margin-bottom:20px;
 }
 
-.menu li.shop1{
-    background: url(../image/shop1.png) no-repeat;
-}
-.menu li.shop2{
-    background:url(../image/shop2.png) no-repeat;
-}
-.menu li.shou1{
-    background:url(../image/shou1.png) no-repeat;
-}
-.menu li.shou2{
-    background:url(../image/shou2.png) no-repeat;
-}
-.menu li.leveyu1{
-    background:url(../image/leveLanage.png) no-repeat;
-}
-.menu li.leveyu2{
-    background:  url(../image/leveyu2.png) no-repeat;
-}
 .moreStyle{
     bottom: -8rem;
 }

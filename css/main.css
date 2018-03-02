@@ -227,7 +227,25 @@ li.scanner.active{
 .layerclose{
     position: relative;
     left: 50%;
-    margin-left: -13px;
+    margin-left: -19px;
     width: 39px;
     margin-top: 6px;
+}
+.menu li.shop1{
+    background: url(../image/goumai.png) no-repeat;
+}
+.menu li.shop2{
+    background:url(../image/goumai2.png) no-repeat;
+}
+.menu li.shou1{
+    background:url(../image/shou1.png) no-repeat;
+}
+.menu li.shou2{
+    background:url(../image/shou2.png) no-repeat;
+}
+.menu li.leveyu1{
+    background:url(../image/leveLanage.png) no-repeat;
+}
+.menu li.leveyu2{
+    background:  url(../image/leveyu2.png) no-repeat;
 }

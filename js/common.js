@@ -10,9 +10,10 @@ $(function(){
     }
     var name = $.getUrlParam('name');
     $('.menu .shop1').click(function(){
-        if(name === '') {
+        if(name === 'null') {
            $('.validate').css('display','block');
         } else if(name === 'admin') {
+            // $('.menu .shop1').toggleClass('shop2')
             window.location.href='./pay.html';
         }
 
@@ -20,7 +21,7 @@ $(function(){
     })
     $('.menu .leveyu1').click(function(){
         // $(this).toggleClass('leveyu2');
-        if(name === '') {
+        if(name === 'null') {
             $('.validate').css('display','block');
         } else if(name === 'admin') {
             window.location.href='./chat.html';
@@ -28,12 +29,13 @@ $(function(){
 
     })
     $('.menu .shou1').click(function(){
-        if(name === '') {
+        if(name === 'null') {
             $('.validate').css('display','block');
         } else if(name === 'admin') {
             $(this).toggleClass('shou2');
             if($(this).hasClass('shou2')) {
-                $('.layer2').css('display','block');
+                $('.validate').css('display','none');
+                $('.validate1 ').css('display','block');
             }
         }
 
@@ -51,7 +53,7 @@ $(function(){
         $('.layer').css('display','block');
     })
     $('.personCenter').click(function(){
-        window.location.href='./home.html';
+        window.location.href='./home.html?name'+name;
     })
     $('.layer .yi').click(function(){
         window.location.href='./warning.html';
@@ -60,7 +62,7 @@ $(function(){
         window.location.href='./warning.html';
     })
     $('.layer .shui').click(function(){
-        window.location.href='./goodDetail2.html';
+        window.location.href='./goodDetail2.html?name='+name;
     })
     $('.layer .jia').click(function(){
         window.location.href='./warning.html';
@@ -75,7 +77,7 @@ $(function(){
         window.location.href='./warning.html';
     })
     $(' .layer .jiu').click(function(){
-        window.location.href='./goodDetail4.html';
+        window.location.href='./goodDetail4.html?name='+name;
     })
     $(' .layer .lv').click(function(){
         window.location.href='./warning.html';
